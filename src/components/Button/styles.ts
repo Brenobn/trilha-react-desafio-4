@@ -4,14 +4,13 @@ import styled from 'styled-components';
 export const ButtonContainer = styled.button`
     width: 100%;
     height: 42px;
-    background-color: #81259D;
+    background-color: ${props => props.disabled ? '#81259D' : '#81259D60'};
     color: #FFF;
-
     border: 1px solid #81259D;
     border-radius: 21px;
 
     &:hover {
         opacity: 0.6;
-        cursor:pointer;
+        cursor: ${props => props.disabled ? 'pointer' : 'no-drop'};
     }
 `

@@ -19,7 +19,6 @@ export const InputContainer = styled.div`
         border: 0;
         outline: none;
     }
-
 `
 
 export const ErrorMessage = styled.p`
